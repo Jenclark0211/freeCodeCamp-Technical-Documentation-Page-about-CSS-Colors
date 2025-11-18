@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&family=DynaPuff:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Russo+One&family=Source+Code+Pro:ital@0;1&family=Walter+Turncoat&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar">
+		<header><span class="big">CSS Colors</span></headers>
+		 <ul>
+			<li>
+					<a class="nav-link" href="#Schemes">Schemes</a>
+			</li>
+			<li>
+					<a class="nav-link" href="#Hex">Hex</a>
+			</li>
+			<li>
+					<a class="nav-link" href="#RGB">RGB</a>
+			</li>
+			<li>
+					<a class="nav-link" href="#HSL">HSL</a>
+			</li>
+			<li>
+					<a class="nav-link" href="#Gradients">Gradients</a>
+			</li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+
+	<section id="Schemes" class="main-section">
+		<header>Schemes
+    </header>
+		<p>The color wheel is a visual representation of colors arranged according to their chromatic relationships. </p>
+		<p>There are 6 main color schemes.</p>
+		<ul>
+			<li>Monochromatic: Combines different shades and tints of a single color.</li>
+			<li>Analogous: Pairs one color with two colors next to it on the color wheel.</li>
+			<li>Complementary: Uses two colors opposite each other on the color wheel.</li>
+			<li>Triadic: Combines three colors evenly spaced on the color wheel.</li>
+			<li>Split-complementary: Uses a base color and two adjacent to its complementary color.</li>
+			<li>Neutral: Utilizes neutral colors like black, white, and gray.</li>
+		</ul>
+		<figure>
+			<img src="https://live.staticflickr.com/65535/54822153079_1a9cf902ae_z.jpg" alt="Color schemes" >
+		</figure>
+  </section>
+	<section id="Hex" class="main-section"><header>Hex
+   </header>
+	 <p>Hexadecimal color values, or hex codes represent colors in the RGB color model. It refers to the base-16 numbering system, which uses digits 0 to 9 and letters A to F. Below is an expanple of the layout.</p>
+	 <code>element {
+     color: #RRGGBB;
+}
+</code>
+<p>Here is the hex code for a redish orange color</p>
+ <code> body {
+	 color:#FF5733;
+ }</code>
+ <p>The precision and compatibility of Hex Codes allow for over 16million colors.</p>
+    <figure>
+			<img src="https://live.staticflickr.com/65535/54821060032_a55c4a7d41_z.jpg" alt="Hex Model">
+		</figure>
+	</section>
+	<section id="RGB" class="main-section"><header>RGB</header>
+	 <p> RGB stands for Red, Green, and Blue — the primary colors of light. These three colors are combined in different intensities to create a wide range of colors.</p>
+	 <code>element {
+  color: rgb(red, green, blue);
+}
+
+	 </code>
+	 <p>These three colors are combined in different intensities to create a wide range of colors.</p>
+	 <code>p {
+  color: rgb(255, 0, 0);
+}
+
+	 </code>
+	 <p>The above code would change the text color of the paragraph to red because the red value is set to 255, while green and blue are set to 0.
+   </p>
+	 <figure>
+			<img src="https://live.staticflickr.com/65535/54822240005_e3d2147efe_n.jpg" alt="RGB model" >
+		</figure>
+  </section>
+	<section id="HSL" class="main-section"><header>HSL</header>
+	 <p> HSL stands for Hue, Saturation, and Lightness — three key components that define a color.</p>
+	 <code>
+		 element {
+  color: hsl(hue, saturation, lightness);
+}
+   </code>
+	 <p>The HSL color model represents colors in a way that is more in line with how humans perceive color </p>
+	 <code>p {
+  color: hsl(120, 100%, 50%);
+}
+   </code>
+	 <figure>
+			<img src="https://live.staticflickr.com/65535/54822153089_80f498d401_w.jpg" alt="HSL color model" >
+		</figure>
+
+
+	</section>
+	<section id="Gradients" class="main-section"><header>Gradients</header>
+	 <p>CSS gradient functions let you display smooth transitions between two or more colors within an element.</p>
+	 <p>Linear Gradients - The color transition goes down, up, left, right, or diagonally, Radial Gradients - The color transition goes out from a central point, Conic Gradients - The color transition is rotated around a center point</p>
+	 <code>
+		 body {
+			 background:linear-gradient(to right, red, blue);
+			 }
+	 </code>
+	 <figure>
+			<img src="https://live.staticflickr.com/65535/54822240010_dbf8116990_w.jpg" alt="Gradients" >
+		</figure>
+	</section>
+ </main>
+</body>
+</html>
